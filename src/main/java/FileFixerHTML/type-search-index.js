@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"com.filefixer","l":"FileFixer"},{"p":"com.filefixer","l":"Handler"},{"p":"com.filefixer","l":"ProcessFiles"},{"p":"com.filefixer","l":"Student"},{"p":"com.filefixer","l":"StudentIDHandler"},{"p":"com.filefixer","l":"StudentNameHandler"}];updateSearchResults();

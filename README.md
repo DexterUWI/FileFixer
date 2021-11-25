@@ -88,20 +88,15 @@ FileFixer is an object oriented JAVA solution that allows a lecturer to rename a
 
 In regards to the Single Responsibility Principle, it is noted that a class should have only a single responsibility and we only have one reason to change or modify it’s class. Moreover, this was executed by creating separate concrete handler classes namely, StudentNameHandler and StudentIDHandler where each concrete handler class was used for processing student search requests as it pertains to their name and identification number respectively.
 
-  
-
 In regards to the Open/Closed Principle, it is noted that various classes and methods should be open for extension, but closed for modification. And so, with this principle in mind, with the code development sought to it that the entities that we created were extendable if need be.
 
-  
+In regards to the Interface Segregation Principle, it is said that “Many client-specific interfaces are better than one general-purpose interface.” Where “big” interface are to be further split into smaller interfaces until the client of the interface will only know about the methods that are related to them.However, while bearing that in mind, the final development stages sought that there only need be one interface, that is, the “Handler”.
 
   
-  
-  
 
--   Class Diagram
+## Class Diagram
     
-
--   [FileFixer](https://github.com/DexterUWI/FileFixer)/[Documentation](https://github.com/DexterUWI/FileFixer/tree/main/Documentation)/[Screenshots](https://github.com/DexterUWI/FileFixer/tree/main/Documentation/Screenshots)/Class Diagram FileFixer Application.png
+-   LINK: https://github.com/DexterUWI/FileFixer/tree/main/Documentation/Screenshots
     
 
 ## - Implementation: How to run, Setup requirements

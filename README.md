@@ -2,6 +2,7 @@
 This repo will be used for the code base of an object oriented solution called FileFixer.
 
 # File Fixer Documentation
+-   Demo Video Link:: [https://youtu.be/HJzn2jUnDK8](https://youtu.be/HJzn2jUnDK8)
 
 ## Introduction: Team Members, Project scope and purpose
 
@@ -14,8 +15,6 @@ FileFixer is an object oriented JAVA solution that allows a lecturer to rename a
 -   Videsh Jagai: 816014860
 -   Satash Rampersad: 816020134
     
-
-  
 
 ### Objectives
 -   The java application will be able to accept a CSV folder named filesToRename.
@@ -57,8 +56,6 @@ FileFixer is an object oriented JAVA solution that allows a lecturer to rename a
     
 
   
-  
-
 ## Design: Design patterns used, Conformance to SOLID, Class Diagram
 
 -   Design Patterns Used
@@ -69,7 +66,7 @@ FileFixer is an object oriented JAVA solution that allows a lecturer to rename a
 
   
 
--   How we implemented the Chain of Responsibility Design Pattern
+### How we implemented the Chain of Responsibility Design Pattern
     
 
 -   1. We declared a handler interface (Handler) and described the signature of a method (findStudentData(File)) for handling requests. Initially, we
@@ -83,7 +80,7 @@ FileFixer is an object oriented JAVA solution that allows a lecturer to rename a
 
   
 
--   Conformance to SOLID
+### Conformance to SOLID
     
 
 In regards to the Single Responsibility Principle, it is noted that a class should have only a single responsibility and we only have one reason to change or modify it’s class. Moreover, this was executed by creating separate concrete handler classes namely, StudentNameHandler and StudentIDHandler where each concrete handler class was used for processing student search requests as it pertains to their name and identification number respectively.
@@ -91,6 +88,8 @@ In regards to the Single Responsibility Principle, it is noted that a class shou
 In regards to the Open/Closed Principle, it is noted that various classes and methods should be open for extension, but closed for modification. And so, with this principle in mind, with the code development sought to it that the entities that we created were extendable if need be.
 
 In regards to the Interface Segregation Principle, it is said that “Many client-specific interfaces are better than one general-purpose interface.” Where “big” interface are to be further split into smaller interfaces until the client of the interface will only know about the methods that are related to them.However, while bearing that in mind, the final development stages sought that there only need be one interface, that is, the “Handler”.
+
+In regards to the Dependency Inversion Principle, it is noted that the code development employed solutions to reduce tight coupling in our whereby depending on various level abstractions in completion of this application.
 
   
 
@@ -101,9 +100,8 @@ In regards to the Interface Segregation Principle, it is said that “Many clien
 
 ## - Implementation: How to run, Setup requirements
 
--   Step Up Requirements
+### Step Up Requirements
     
-
 -   Device: Desktop or a Laptop
     
 -   Operating System: Windows OS or Mac OS
@@ -113,11 +111,8 @@ In regards to the Interface Segregation Principle, it is said that “Many clien
 -   Java SE Development Kit (JDK)
     
 
-  
-
--   Source files
+### Source files
     
-
 -   Click on the “Code” button above and download as a zip file.
     
 -   Choose a destination to save to the zip file to or move it to your preferred location if it is downloaded automatically.
@@ -129,9 +124,7 @@ In regards to the Interface Segregation Principle, it is said that “Many clien
 -   Follow the on-screen instructions that follow and if any assistance is needed, go to the “Help” tab in visual studio
     
 
-  
-
--   How to run
+### How to run
     
 
 -   Due to the nature of the application, which relies heavily on the correctness of the various folder paths for the data files, we will give you a thorough walkthrough (inclusive of screenshots) as to how to move from downloading the project folder from this repository to successfully executing the FileFixer.java (main class) on Visual Studio Code (recommended environment).
@@ -139,27 +132,22 @@ In regards to the Interface Segregation Principle, it is said that “Many clien
 
   
 
--   Windows OS
+#### Windows OS
     
-
 -   In Visual Studio Code, go to Settings and search “Copy Relative Path Separator” and ensure that path separation character is a “\” and not a “/”.
     
 -   Press the run code button and observe the output.
     
 
--   Mac OS
+#### Mac OS
     
-
 -   Press the run code button and observe the output.
     
 
-  
-
-## - Testing and Evaluation: Test Cases and Suites, Demo video link
+## Testing and Evaluation: Test Cases and Suites, Demo video link
 
 -   Test Suite 1.0 :: ProcessFilesTest
     
-
 -   Test Case 1.1 public void testgetFoldersExistance()
     
 
@@ -358,9 +346,6 @@ assertEquals(expResult, actualResult);
 }
 
   
-  
-  
-  
 
--   Demo Video Link:: [https://youtu.be/HJzn2jUnDK8](https://youtu.be/HJzn2jUnDK8)
+
 
